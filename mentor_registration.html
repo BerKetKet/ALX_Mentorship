@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>ALX Africa Mentorship Program - Mentor Registration</title>
+</head>
+<body>
+
+    <h1>Mentor Registration</h1>
+
+    <form>
+        <h2>Personal Information</h2>
+        <div>
+            <label for="firstName">First Name:</label><br>
+            <input type="text" id="firstName" name="firstName"><br><br>
+        </div>
+        <div>
+            <label for="lastName">Last Name:</label><br>
+            <input type="text" id="lastName" name="lastName"><br><br>
+        </div>
+        <div>
+            <label for="email">Email Address:</label><br>
+            <input type="email" id="email" name="email"><br><br>
+        </div>
+        <div>
+            <label for="phone">Phone Number (Optional):</label><br>
+            <input type="tel" id="phone" name="phone"><br><br>
+        </div>
+
+        <h2>ALX Program Information</h2>
+        <div>
+            <label for="program">Which ALX program did you complete?</label><br>
+            <select id="program" name="program">
+                <option value="">Select Program</option>
+                <option value="softwareEngineering">Software Engineering</option>
+                <option value="dataScience">Data Science</option>
+                <option value="cloudComputing">Cloud Computing</option>
+                </select><br><br>
+        </div>
+        <div>
+            <label for="completionYear">Year of Program Completion:</label><br>
+            <input type="number" id="completionYear" name="completionYear"><br><br>
+        </div>
+        <div>
+            <label for="completedProgram">Have you successfully completed your ALX program with passing scores?</label><br>
+            <input type="radio" id="completedYes" name="completedProgram" value="yes">
+            <label for="completedYes">Yes</label><br>
+            <input type="radio" id="completedNo" name="completedProgram" value="no">
+            <label for="completedNo">No</label><br><br>
+        </div>
+
+        <h2>Professional Experience</h2>
+        <div>
+            <label for="currentTitle">Current Job Title (if applicable):</label><br>
+            <input type="text" id="currentTitle" name="currentTitle"><br><br>
+        </div>
+        <div>
+            <label for="companyName">Company Name (if applicable):</label><br>
+            <input type="text" id="companyName" name="companyName"><br><br>
+        </div>
+        <div>
+            <label for="workExperience">How long have you been working with the skills you learned in your ALX program?</label><br>
+            <select id="workExperience" name="workExperience">
+                <option value="">Select Experience</option>
+                <option value="lessThan6Months">Less than 6 months</option>
+                <option value="6MonthsTo1Year">6 months to 1 year</option>
+                <option value="1To2Years">1 to 2 years</option>
+                <option value="moreThan2Years">More than 2 years</option>
+            </select><br><br>
+        </div>
+
+        <h2>Mentorship Skills & Interests</h2>
+        <div>
+            <label>Areas of expertise you can mentor in:</label><br>
+            <input type="checkbox" id="skillProgramming" name="skills" value="programming">
+            <label for="skillProgramming">Programming</label><br>
+            <input type="checkbox" id="skillDataAnalysis" name="skills" value="dataAnalysis">
+            <label for="skillDataAnalysis">Data Analysis</label><br>
+            <input type="checkbox" id="skillCareerAdvice" name="skills" value="careerAdvice">
+            <label for="skillCareerAdvice">Career Advice</label><br>
+            <input type="checkbox" id="skillProjectManagement" name="skills" value="projectManagement">
+            <label for="skillProjectManagement">Project Management</label><br>
+            <input type="checkbox" id="skillOther" name="skills" value="other">
+            <label for="skillOther">Other (Please specify below)</label><br><br>
+            <label for="otherSkills">If Other, please specify:</label><br>
+            <input type="text" id="otherSkills" name="otherSkills"><br><br>
+        </div>
+        <div>
+            <label for="mentorReason">Briefly describe why you would like to be a mentor:</label><br>
+            <textarea id="mentorReason" name="mentorReason" rows="4" cols="50"></textarea><br><br>
+        </div>
+
+        <h2>Language Proficiency</h2>
+        <div>
+            <label for="englishProficiency">Are you proficient in English and able to communicate effectively?</label><br>
+            <input type="radio" id="englishYes" name="englishProficiency" value="yes">
+            <label for="englishYes">Yes</label><br>
+            <input type="radio" id="englishNo" name="englishProficiency" value="no">
+            <label for="englishNo">No</label><br><br>
+        </div>
+
+        <h2>Agreement</h2>
+        <div>
+            <input type="checkbox" id="agreeTerms" name="agreeTerms" value="agree">
+            <label for="agreeTerms">I agree to the program's terms and conditions and code of conduct.</label><br><br>
+        </div>
+
+        <button type="submit">Submit Application</button>
+
+    </form>
+
+</body>
+</html>
